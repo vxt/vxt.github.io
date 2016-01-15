@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Linuxでの名前解決 drillコマンドの使い方</title>
+    <link rel="canonical" href="https://vxt.github.io/dns.html">
+  </head>
+<body>
+  <article>
+    <h1>DNS メモ</h1>
+    <h2>インストール</h2>
+    <p>Ubuntu</p>
+    <p>ldnsutilsパッケージをインストールする</p>
+    <p>apt-get install ldnsutils</p>
+    <p>問い合わせ</p>
+    <p>drill example.com</p>
+    <p>dig example.com</p>
+    <p>DNSサーバーを指定する</p>
+    <p>drill example.com @8.8.8.8</p>
+    <p>dig example.com @8.8.8.8</p>
+    <p>ルートサーバーから順に問い合わせる</p>
+    <p>drill -T example.com</p>
+    <p>dig +trace example.com</p>
+  </article>
+</body>
+</html>
