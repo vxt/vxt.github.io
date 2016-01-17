@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>opensslで署名リクエストを生成する</title>
+    <link rel="canonical" href="http://pepper.uk.to/ssl.html">
+  </head>
+<body>
+  <article>
+    <h1>opensslで署名リクエストを生成する</h1>
+    <p>秘密鍵を生成</p>
+    <code>openssl genrsa -out server.key 2048</code>
+    <p>CSRを生成</p>
+    <code>openssl req -new -sha256 -key server.key -out server.csr</code>
+    <p>CSRを確認</p>
+    <code>openssl req -text -in server.csr</code>
+  </article>
+</body>
+</html>
